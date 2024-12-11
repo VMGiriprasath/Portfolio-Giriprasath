@@ -1,0 +1,156 @@
+<!-- Home Section with Aggressive and Animated Design -->
+<div class="home-section " style="height: 100vh;">
+    <div class="container d-flex align-items-center justify-content-center h-100">
+      <div class="row w-100">
+        <!-- Left Section: Text and Button -->
+        <div class="col-md-6 text-center text-md-start">
+          <h1 class="home-heading">Hi, I'm <span class="text-orange">Giriprasath V M</span></h1>
+          <p class="lead home-description">
+            I am a passionate Information Technology student with a keen interest in software development, eager to make my mark in the tech world.
+          </p>
+          <a href="#projects" class="btn btn-orange btn-lg mt-3 explore-btn">Explore My Portfolio</a>
+        </div>
+  
+        <!-- Right Section: Photo -->
+        <div class="col-md-6 text-center">
+          <div class="photo-wrapper">
+            <img src="/me.png" alt="Giriprasath Photo" class="img-fluid home-photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Custom Styles -->
+  <style>
+    .home-section {
+      background-color: #111; /* Dark background for an aggressive look */
+      color: white;
+      padding-top: 3rem;
+    }
+  
+    /* Orange Text Style */
+    .text-orange {
+      color: #ff5733; /* Orange color for text */
+    }
+  
+    .home-heading {
+      font-size: 3.5rem; /* Big, bold text */
+      font-weight: bold;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  
+    .home-description {
+      font-size: 1.25rem;
+      color: #ddd;
+      animation: fadeIn 2s ease-in-out;
+    }
+  
+    .explore-btn {
+      font-size: 1.2rem;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      animation: buttonAnimation 1s ease-in-out;
+      background-color: #ff5733; /* Orange background */
+      border: none; /* Remove default button border */
+      color: white; /* White text */
+    }
+  
+    /* Hover effect for the button */
+    .explore-btn:hover {
+      transform: scale(1.1);
+      background-color: #e04e2d; /* Darker orange on hover */
+      transition: all 0.3s ease;
+    }
+  
+    .photo-wrapper {
+      text-align: center; /* Center align photo */
+    }
+  
+    .home-photo {
+      width: 60vw; /* Make photo width 60% of the viewport width */
+      height: auto; /* Maintain aspect ratio */
+      max-width: 300px; /* Max width for larger screens */
+      max-height: 300px; /* Max height for larger screens */
+      object-fit: cover;
+      border-radius: 50%; /* Circular shape */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    }
+  
+    /* Hover effect on photo */
+    .home-photo:hover {
+      transform: scale(1.1); /* Slight zoom on hover */
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+  
+    /* Animation for text */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    /* Animation for button */
+    @keyframes buttonAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    /* Media Queries for Smaller Screens */
+    @media (max-width: 768px) {
+      .home-heading {
+        font-size: 2.5rem; /* Smaller font size for smaller screens */
+      }
+  
+      .home-description {
+        font-size: 1rem; /* Smaller font size for description */
+      }
+  
+      .explore-btn {
+        font-size: 1rem; /* Smaller font size for button */
+        padding: 10px 25px; /* Reduced padding for button */
+      }
+  
+      .home-photo {
+        width: 45vw; /* Resize photo to 45% of viewport width */
+        max-width: 250px; /* Limit max width */
+        max-height: 250px; /* Limit max height */
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .home-heading {
+        font-size: 2rem; /* Even smaller font size for mobile screens */
+      }
+  
+      .home-description {
+        font-size: 0.9rem; /* Even smaller font size for description */
+      }
+  
+      .explore-btn {
+        font-size: 0.9rem; /* Smaller font size for button */
+        padding: 8px 20px; /* Reduced padding for button */
+      }
+  
+      .home-photo {
+        width: 40vw; /* Resize photo to 40% of viewport width for mobile */
+        max-width: 200px; /* Limit max width */
+        max-height: 200px; /* Limit max height */
+      }
+    }
+  </style>
+  

@@ -1,0 +1,145 @@
+<!-- About Me Section -->
+<div class="about-section">
+    <div class="container">
+      <div class="row ">
+        <!-- Left Section: Introduction and Summary -->
+        <div class="col-md-8 offset-md-2 text-center text-md-start mt-5">
+  
+          <!-- Powerful Summary -->
+          <p class="about-summary mt-5">
+            I am an enthusiastic and goal-driven student passionate about exploring new technologies such as <strong>C#</strong>, <strong>Angular</strong>, <strong>Flutter</strong>, and <strong>Cloud Computing</strong>. Technology, for me, is more than just writing code—it’s about solving real-world problems and building impactful solutions. I am committed to continuous learning and growing, contributing to projects that make a positive difference in the tech world.
+          </p>
+  
+          <!-- Enthusiasm Section -->
+          <div class="enthusiasm-section">
+            <h3 class="section-heading">Why I'm Enthusiastic About Technology</h3>
+            <p id="enthusiasm-summary">
+              My passion for technology began at a young age, and I’ve been fortunate to explore the limitless possibilities of tech ever since.
+            </p>
+  
+            <!-- Highlight the Challenge -->
+            <div class="challenge-highlight">
+              <h4>Completed the 100-Programs-in-a-Day Challenge</h4>
+              <p>
+                One of my most exciting accomplishments was successfully solving <strong>100 programming problems</strong> in a single day. This challenge tested my problem-solving skills, focus, and ability to stay motivated under pressure. The experience was not just about coding; it was a testament to my dedication and love for overcoming challenges in technology.
+              </p>
+            </div>
+  
+            <!-- Collapsed extra text -->
+            <div id="extra-story" class="collapse mt-3">
+              <p>
+                Every day is a learning experience, and my goal is to harness the power of technology to shape the future, one solution at a time. Whether it's optimizing processes, building scalable solutions, or collaborating with like-minded innovators, I am constantly looking for opportunities to expand my skills and contribute to cutting-edge projects.
+                <br><br>
+                Technology is not just a tool for me—it's a way of life, a passion, and a continuous journey. I look forward to the future and how we can collectively leverage technology to bring about positive change in our world.
+              </p>
+            </div>
+  
+            <!-- Toggle Button -->
+            <button class="btn btn-outline-primary toggle-button" type="button" data-bs-toggle="collapse" data-bs-target="#extra-story" aria-expanded="false" aria-controls="extra-story">
+              More <span class="arrow">↓</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Custom Styles -->
+  <style>
+    .about-section {
+      color: #333;
+    }
+  
+    .about-summary {
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.8;
+      font-weight: 500;
+      background-color: #f4f7f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+  
+    .section-heading {
+      font-size: 2rem;
+      color: #fd7e14; /* Changed to orange */
+    }
+  
+    .enthusiasm-section {
+      margin-top: 3rem;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    .challenge-highlight {
+      background-color: #fff3e0; /* Changed to a light orange */
+      padding: 20px;
+      border-left: 5px solid #fd7e14; /* Changed to orange */
+      border-radius: 10px;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .challenge-highlight h4 {
+      color: #fd7e14; /* Changed to orange */
+      font-weight: 600;
+    }
+  
+    .toggle-button {
+      margin-top: 15px;
+      font-weight: 500;
+      border-radius: 20px;
+      color: #fd7e14; /* Changed to orange */
+    }
+  
+    .toggle-button .arrow {
+      margin-left: 5px;
+      font-size: 1rem;
+      transition: transform 0.3s;
+    }
+  
+    .toggle-button[aria-expanded="true"] .arrow {
+      transform: rotate(180deg);
+    }
+  
+    .enthusiasm-section .btn-outline-primary:hover {
+      background-color: #fd7e14; /* Changed to orange */
+      color: #fff;
+    }
+  
+    @media (max-width: 768px) {
+      .about-summary {
+        font-size: 1rem;
+      }
+  
+      .section-heading {
+        font-size: 1.7rem;
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .about-summary {
+        font-size: 0.9rem;
+      }
+  
+      .section-heading {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+  
+  <!-- JavaScript for Toggle Button -->
+  <script>
+    document.querySelectorAll('.toggle-button').forEach(button => {
+      button.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.innerHTML = expanded 
+          ? 'More <span class="arrow">↓</span>' 
+          : 'Less <span class="arrow">↑</span>';
+      });
+    });
+  </script>
+  

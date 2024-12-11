@@ -1,0 +1,117 @@
+<!-- Contact Section -->
+<div class="contact-section p-5" id="contact">
+    <h3 class="section-heading text-center pt-5">Contact Me</h3>
+    <p class="text-center">I would love to hear from you! Please fill out the form below to get in touch.</p>
+    
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" required placeholder="Your Email">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-primary btnn">Send Message</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Custom Styles -->
+  <style>
+    /* Contact Section */
+    .contact-section {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  /* Custom Button Styles */
+.btnn {
+  background-color: #ff5733; /* Orange color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+}
+
+.btnn:hover {
+  background-color: #e04e2d; /* Darker orange for hover */
+  color: white; /* Ensure text stays white on hover */
+}
+
+    .section-heading {
+      font-size: 2.2rem;
+      color: black;
+      margin-bottom: 2rem;
+    }
+  
+    .contact-form {
+      padding: 3rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    .contact-form .form-label {
+      font-size: 1.1rem;
+      color: #333;
+    }
+  
+    .contact-form .form-control {
+      font-size: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    .contact-form button {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+    }
+  
+    .contact-form button:hover {
+      background-color: #ff5733;
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-form {
+        padding: 2rem;
+      }
+  
+      .section-heading {
+        font-size: 1.8rem;
+      }
+  
+      .contact-form .form-label {
+        font-size: 1rem;
+      }
+  
+      .contact-form .form-control {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+      }
+  
+      .contact-form button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+      }
+    }
+  
+    /* Extra small devices (portrait phones, less than 576px) */
+    @media (max-width: 576px) {
+      .contact-section {
+        margin: 2rem;
+      }
+  
+      .contact-form .form-control {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+      }
+    }
+  </style>
+  

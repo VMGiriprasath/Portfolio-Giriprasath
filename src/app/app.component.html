@@ -1,0 +1,204 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+  
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+    </a>
+    <!-- Navbar Toggle Button for Smaller Screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link fs-5 fs-md-6" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5 fs-md-6" href="#aboutme">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5 fs-md-6" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5 fs-md-6" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5 fs-md-6" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="btn btn-outline-primary mx-2 px-4 py-2 fs-5 rounded-pill">LinkedIn</a>
+        <a href="https://github.com/your-username" target="_blank" class="btn btn-outline-secondary mx-2 px-4 py-2 fs-5 rounded-pill">GitHub</a>
+        <a href="/assets/resume.pdf" target="_blank" class="btn btn-outline-warning mx-2 px-4 py-2 fs-5 rounded-pill">Resume</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Content Components -->
+<div class="col">
+  <app-home id="home" class="section"></app-home>
+  <app-about id="aboutme" class="section"></app-about>
+  <app-skills id="skills" class="section"></app-skills>
+  <app-projects id="projects" class="section"></app-projects>
+  <app-contact id="contact" class="section"></app-contact>
+</div>
+
+<!-- Footer -->
+<footer class="footer py-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Left Section: Copyright -->
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <p class="mb-0">&copy; 2024 Giriprasath VM. All Rights Reserved.</p>
+      </div>
+
+      <!-- Right Section: Social Media Links -->
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <a href="https://www.linkedin.com/in/giriprasath-vm/" target="_blank" class="social-icon me-3">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/giriprasath" target="_blank" class="social-icon me-3">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:your-email@example.com" class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Styles -->
+<style>
+  /* Orange Theme Colors */
+  /* No variables, using direct color codes */
+
+  /* Navbar Styles */
+  .navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .navbar:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-nav .nav-link {
+    color: black !important; /* Dark orange */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ff6f00 !important; /* Main orange */
+  }
+
+  .btn {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-outline-primary {
+    color: #e65100; /* Dark orange */
+    border-color: #e65100; /* Dark orange */
+  }
+
+  .btn-outline-primary:hover {
+    background-color: #e65100;
+    color: #fff;
+  }
+
+  .btn-outline-secondary {
+    color: #ff6f00; /* Main orange */
+    border-color: #ff6f00; /* Main orange */
+  }
+
+  .btn-outline-secondary:hover {
+    background-color: #ff6f00;
+    color: #fff;
+  }
+
+  .btn-outline-warning {
+    color: #ffb74d; /* Light orange */
+    border-color: #ffb74d; /* Light orange */
+  }
+
+  .btn-outline-warning:hover {
+    background-color: #ffb74d;
+    color: #fff;
+  }
+
+  /* Footer Styles */
+  .footer {
+    color: black; /* Dark orange */
+    border-top: 1px solid #ffb74d; /* Light orange */
+  }
+
+  .footer .social-icon {
+    font-size: 1.5rem;
+    color:black; /* Main orange */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #ffb74d; /* Light orange */
+  }
+
+  .footer .social-icon:hover {
+    color: #fff;
+    background-color: #ff6f00; /* Main orange */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-brand img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .footer .social-icon {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .footer .social-icon {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
+<!-- Smooth Scroll Script -->
+<script>
+  // Stop scrolling when clicking on the 'Projects' link
+  document.querySelectorAll('a.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      // Get the target section to scroll to
+      const target = document.querySelector(this.getAttribute('href'));
+      
+      // Check if the clicked link is for 'Projects'
+      if (this.getAttribute('href') === "#projects") {
+        // Stop scrolling if the 'Projects' link is clicked
+        return;
+      }
+      
+      // If not the 'Projects' link, perform smooth scrolling
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
